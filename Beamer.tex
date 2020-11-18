@@ -1,7 +1,8 @@
 \documentclass[unknownkeysallowed]{beamer}
 \usepackage[french,english]{babel}
-\usepackage{beamer_js}
-\usepackage{shortcuts_js}
+\usepackage{./tex/beamer_js}
+\usepackage{./tex/shortcuts_js}
+
 \usepackage{csquotes}
 \begin{document}
 
@@ -148,8 +149,8 @@ are random variables.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Random Fourier Features}
 
-\begin{theorem}
-\textbf{Bochner}. A continuous kernel $k(x,y) = k(x - y)$ on $\bbR^d$ is positive definite if and only if $k(\delta)$ is the Fourier transform of a non-negative measure.
+\begin{theorem}[Bochner]
+A continuous kernel $k(x,y) = k(x - y)$ on $\bbR^d$ is positive definite if and only if $k(\delta)$ is the Fourier transform of a non-negative measure.
 \end{theorem}
 \begin{itemize}
     \item Shift-invariant kernel properly scale, define by $\zeta_{\omega}(x) = e^{j\omega'x}$:

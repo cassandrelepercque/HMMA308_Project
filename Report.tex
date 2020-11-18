@@ -12,8 +12,11 @@
 \usepackage{epsfig}
 \usepackage{ulem, stmaryrd, dsfont}
 \usepackage{hyperref}
-\usepackage{scribe}
-\usepackage{shortcuts_js}
+
+% the following were missing:
+
+\usepackage{./tex/scribe}
+\usepackage{./tex/shortcuts_js}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Hyperlinks
@@ -254,5 +257,5 @@ We can note that any mixture of these features (like combining partitioning with
 \newpage
 \bibliographystyle{alpha}
 \nocite{*}
-\bibliography{biblio.bib}
+\bibliography{../biblio.bib}
 \end{document}
